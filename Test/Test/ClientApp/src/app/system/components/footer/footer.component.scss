@@ -1,0 +1,14 @@
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+    color: #fff;
+	background-color: #304ffe;
+	
+	& .copyright {
+		font-family: "Font Awesome 5 Free", sans-serif;
+		margin: 30px 0 30px 0;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,14 @@
+<mat-nested-tree-node class="node">	
+		<div class="mat-tree-node">
+			<button mat-icon-button (click)="isExpanded()"
+					[attr.aria-label]="'toggle ' + name">
+			<mat-icon class="mat-icon-rtl-mirror">
+				{{expanded ? 'expand_more' : 'chevron_right'}}
+			</mat-icon>
+			</button>	
+			{{name}}	
+		</div>
+		<ul [class.tree-invisible]="!expanded">			
+			<ng-template class="mr-2" appContainer></ng-template>
+		</ul>								
+</mat-nested-tree-node>

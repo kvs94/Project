@@ -1,0 +1,12 @@
+ <mat-tree-node matTreeNodeToggle>
+		<li class="mat-tree-node">
+		<button mat-icon-button disabled></button>
+			<mat-form-field class="select">
+				<mat-select placeholder="Test" #select (selectionChange)="sendMessage()">
+					<mat-option value="Test 1">Test 1</mat-option>
+					<mat-option value="Test 2">Test 2</mat-option>
+					<mat-option value="Test 3">Test 3</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</li>
+</mat-tree-node>

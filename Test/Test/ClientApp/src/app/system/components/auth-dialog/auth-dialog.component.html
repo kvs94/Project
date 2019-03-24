@@ -1,0 +1,16 @@
+<div class="container justify-content-center">
+	<h1 mat-dialog-title>Please, Login</h1>
+	<div mat-dialog-content>
+		  <mat-form-field>
+			<input matInput [(ngModel)]="user.logonName" placeholder="Enter login">
+			</mat-form-field>
+		<mat-form-field>
+			<input matInput [(ngModel)]="user.password" placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+			<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+		</mat-form-field>
+	</div>
+	<div mat-dialog-actions>
+		<button mat-button [mat-dialog-close]="user" cdkFocusInitial>Login</button>
+	</div>
+</div>
+

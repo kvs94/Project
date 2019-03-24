@@ -1,0 +1,14 @@
+mat-toolbar {
+	background-color: #3C3F41;
+	a {
+		color: white;
+	}
+	ul{
+		margin: 0px;
+		li {
+			list-style-type: none; 
+			display: inline-flex;
+			margin: 0 5px;
+		}
+	}
+}

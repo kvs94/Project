@@ -1,0 +1,11 @@
+<div class="container-fluid">
+	<div class="row justify-content-center ">
+		<mat-card class="col-5 my-4 mr-4" *ngFor="let template of templates">			
+			<mat-card-title>
+				{{template.name}}
+			</mat-card-title>
+			<button mat-button (click)="goToDetail(template.id)"> Select </button>
+		</mat-card>
+	</div>	
+</div>
+

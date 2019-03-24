@@ -1,0 +1,20 @@
+<mat-toolbar #test>
+	<div class="col-1">
+		<div>
+			<a class="navbar-brand" [routerLink]="['/']">My App </a>
+		</div> 
+	</div>
+	<div class="col-8"> 
+		<div>
+			<ul>	
+				<li><a [routerLink]="['/']" mat-button>Home</a></li>
+				<li><a [routerLink]="['/templates']" mat-button>Templates v1</a></li>
+				<li><a [routerLink]="['/templates2']" mat-button>Templates v2</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-3">
+		<a (click)="logOut()" mat-button>Logout</a>
+	</div>
+  
+</mat-toolbar>
